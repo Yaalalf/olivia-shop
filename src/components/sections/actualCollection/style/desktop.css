@@ -1,0 +1,146 @@
+.ActualCollectionSection {
+  block-size: 400px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 40px;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.ActualCollectionSection .BackgroundContainer {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+  z-index: -1;
+}
+/*
+.ActualCollectionSection .BackgroundContainer.One {
+  background-color: rgb(160, 193, 157);
+}
+
+.ActualCollectionSection .BackgroundContainer.Two {
+  background-color: rgb(33 43 32);
+}
+
+.ActualCollectionSection .BackgroundContainer.Three {
+  background-color: rgb(32, 197, 17);
+} */
+
+.ActualCollectionSection .BackgroundContainer .Background {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+
+  opacity: 1;
+  scale: 2;
+
+  border-radius: 100%;
+
+  z-index: 1;
+}
+
+.ActualCollectionSection .BackgroundContainer .Background.After {
+  z-index: 5;
+}
+
+.ActualCollectionSection .BackgroundContainer .Background.Animate {
+  animation-name: scale;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  z-index: 10;
+}
+
+.ActualCollectionSection .BackgroundContainer .Background.One {
+  background-color: rgb(33 43 32);
+}
+
+.ActualCollectionSection .BackgroundContainer .Background.Two {
+  background-color: rgb(180 183 178);
+}
+
+.ActualCollectionSection .BackgroundContainer .Background.Three {
+  background-color: rgb(182 180 163);
+}
+/*
+.ActualCollectionSection .Background.Active {
+  opacity: 1;
+  transform: scale(2);
+} */
+
+.ActualCollectionSection .Adorno {
+  block-size: 600px;
+
+  inline-size: 320px;
+
+  position: absolute;
+  left: -175px;
+  bottom: -120px;
+
+  background-color: rgb(49 70 53);
+
+  mask-image: url('src/assets/patron-fondo-coleccion.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+
+  transform: rotateZ(90deg);
+}
+
+.ActualCollectionSection .Content {
+  inline-size: 400px;
+
+  margin-block-start: 40px;
+}
+
+.ActualCollectionSection .Content h3 {
+  font-size: 32px;
+
+  color: #9b701a;
+}
+
+.ActualCollectionSection .Content p {
+  font-size: 18px;
+
+  color: #6b8172;
+}
+.ActualCollectionSection .ActualCollectionImageContainer {
+  block-size: 100%;
+  inline-size: 712px;
+  position: relative;
+}
+.ActualCollectionSection .ActualCollectionImage {
+  block-size: 100%;
+  inline-size: 712px;
+
+  position: absolute;
+
+  background-image: url('src/assets/actual-collection-image.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ActualCollectionSection .ActualCollectionImage.Two {
+  background-image: url('src/assets/actual-collection-image-two.jpg');
+}
+.ActualCollectionSection .ActualCollectionImage.Three {
+  background-image: url('src/assets/actual-collection-image-three.jpg');
+}
+/****************************Animation***********************************/
+
+@keyframes scale {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 2;
+    opacity: 1;
+  }
+}

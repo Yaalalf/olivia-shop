@@ -1,0 +1,206 @@
+.OnBoardingSection {
+  inline-size: 100%;
+  block-size: auto;
+
+  padding-block-start: 120px;
+  padding-block-end: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-direction: column;
+
+  position: relative;
+
+  background-color: rgb(250, 224, 190);
+}
+
+.OnBoardingSection .Adorno {
+  inline-size: 800px;
+  block-size: 300px;
+
+  position: absolute;
+  top: 0px;
+  left: -400px;
+
+  background-color: white;
+
+  mask-image: url('src/assets/adorno-rama-dos.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.OnBoardingSection .Adorno:nth-of-type(2) {
+  bottom: 40px;
+  right: -400px;
+  left: auto;
+  top: auto;
+
+  transform: rotateY(180deg);
+
+  z-index: 1;
+}
+
+.OnBoardingSection .SectionTitleContainer {
+  inline-size: 600px;
+
+  position: relative;
+}
+
+.OnBoardingSection .SectionTitleContainer h3 {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: relative;
+
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  color: rgb(122, 83, 31);
+}
+
+/***************************OnBOardinCard****************************/
+.OnBoardingCardContainer {
+  margin-block-start: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 60px;
+}
+
+.OnBoardingCardContainer .OnBoardingCard {
+  inline-size: 80%;
+
+  display: flex;
+  gap: 20px;
+}
+
+.OnBoardingCardContainer .OnBoardingCard .ImgContainer {
+  inline-size: 400px;
+  block-size: 400px;
+
+  flex-shrink: 0;
+
+  background-image: url('src/assets/onboarding-vestidos.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 12px;
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(2n) .ImgContainer {
+  order: 1;
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(2) .ImgContainer {
+  background-image: url('src/assets/onboarding-zapatos.jpg');
+
+  filter: brightness(120%);
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(3) .ImgContainer {
+  background-image: url('src/assets/onboarding-tallas.jfif');
+
+  filter: brightness(120%);
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(4) .ImgContainer {
+  background-image: url('src/assets/onboarding-varios.jfif');
+
+  filter: brightness(120%);
+}
+
+.OnBoardingCardContainer .OnBoardingCard .Content {
+  inline-size: 800px;
+}
+.OnBoardingCardContainer .OnBoardingCard .Content h4 {
+  inline-size: auto;
+
+  margin-block-end: 4px;
+
+  font-size: 32px;
+  line-height: 44px;
+  color: rgb(84, 102, 108);
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(2) .Content h4 {
+  color: rgb(148 89 48);
+}
+
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(3) .Content h4 {
+  color: rgb(17 85 89);
+}
+.OnBoardingCardContainer .OnBoardingCard:nth-of-type(4) .Content h4 {
+  color: rgb(181, 145, 123);
+}
+
+.OnBoardingCardContainer .OnBoardingCard .Content p {
+  font-size: 18px;
+
+  color: rgb(56, 54, 54);
+}
+
+/****************************Button**********************************/
+
+.OnBoardingCardContainer .OnBoardingCard .Content .CallToActionContainer {
+  inline-size: 160px;
+  margin-inline-start: 0px;
+  margin-block-start: 8px;
+
+  position: relative;
+}
+
+.OnBoardingCardContainer
+  .OnBoardingCard
+  .Content
+  .CallToActionContainer
+  .CallToAction {
+  inline-size: 160px;
+  block-size: 48px;
+
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: rgb(53, 55, 56);
+  /* background-color: rgb(59, 38, 14); */
+
+  border: 3px solid rgb(53, 55, 56);
+}
+
+.OnBoardingCardContainer
+  .OnBoardingCard
+  .Content
+  .CallToActionContainer
+  .Adorno {
+  inline-size: 50px;
+  block-size: 30px;
+
+  position: absolute;
+  bottom: -12px;
+  top: auto;
+  right: -26px;
+
+  background-color: rgb(53, 55, 56);
+
+  mask-image: url('src/assets/adorno-rama-uno.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  transform: rotateY(180deg) rotateZ(20deg);
+}
+
+.OnBoardingCardContainer
+  .OnBoardingCard
+  .Content
+  .CallToActionContainer
+  .Adorno:nth-of-type(1) {
+  top: -12px;
+  right: -26px;
+  left: auto;
+  transform: rotateY(180deg) rotateX(180deg) rotateZ(20deg);
+}
