@@ -50,7 +50,7 @@
 
 .ActualCollectionSection .BackgroundContainer .Background.Animate {
   animation-name: scale;
-  animation-duration: 1000ms;
+  animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 

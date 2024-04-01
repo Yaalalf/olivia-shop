@@ -1,0 +1,108 @@
+.CubanStoresSection {
+  block-size: 600px;
+
+  position: relative;
+
+  background-image: url('src/assets/cuban-stores-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.CubanStoresSection .BackdropFilter {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.822);
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(3px) grayscale(100%) contrast(40%);
+}
+
+.CubanStoresSection .CubanStoresSectionContainer {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer {
+  inline-size: 480px;
+  text-align: start;
+}
+
+.CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer h3 {
+  color: rgb(213, 186, 127);
+  font-size: 40px;
+}
+
+.CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer p {
+  color: rgb(192, 184, 168);
+  font-size: 18px;
+}
+
+.CubanStoresSection .CubanStoresSectionContainer .ImagesContainer {
+  position: relative;
+  block-size: 60%;
+
+  inline-size: 300px;
+
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .ImagesContainer:nth-of-type(1)
+  .Image {
+  inline-size: 100%;
+  block-size: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 12px;
+
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.183);
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .ImagesContainer:nth-of-type(1)
+  .Image:nth-of-type(1) {
+  grid-row: 1/3;
+
+  background-image: url('src/assets/cuban-stores-one.jpg');
+
+  filter: grayscale(10%);
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .ImagesContainer:nth-of-type(1)
+  .Image:nth-of-type(2) {
+  background-image: url('src/assets/cuban-stores-two.jpg');
+
+  filter: grayscale(50%);
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .ImagesContainer:nth-of-type(1)
+  .Image:nth-of-type(3) {
+  background-image: url('src/assets/cuban-stores-three.jpg');
+
+  filter: grayscale(50%);
+}
