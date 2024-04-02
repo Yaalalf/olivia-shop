@@ -1,0 +1,138 @@
+.SwinsuitSection {
+  block-size: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background-color: #fae0be;
+
+  background-image: url('src/assets/swimsuit-background.jfif');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+
+  overflow: hidden;
+
+  margin-block-end: 220px;
+}
+
+.SwinsuitSection .BackdropFilter {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+
+  backdrop-filter: blur(3px) grayscale(100%);
+}
+
+.SwinsuitSection .Background {
+  inline-size: 100%;
+  block-size: 100%;
+
+  position: absolute;
+
+  background-color: #fae0be;
+
+  opacity: 0.9;
+}
+
+.SwinsuitSection > .Adorno {
+  block-size: 400px;
+  inline-size: 400px;
+
+  position: absolute;
+  bottom: -32px;
+  left: 120px;
+  right: auto;
+
+  background-image: url('src/assets/swimsuit-one.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+
+  filter: brightness(140%) grayscale(80%);
+}
+
+.SwinsuitSection > .Adorno:nth-of-type(4) {
+  block-size: 400px;
+  inline-size: 400px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 120px;
+  left: auto;
+
+  background-image: url('src/assets/swimsuit-two.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  filter: brightness(140%) grayscale(80%);
+}
+
+.SwinsuitSection .ContentContainer {
+  inline-size: 520px;
+  block-size: 400px;
+
+  position: relative;
+}
+
+.SwinsuitSection .ContentContainer .Adorno {
+  inline-size: 100%;
+  block-size: 200px;
+
+  position: absolute;
+
+  top: -220px;
+
+  background-color: #c0a480;
+  mask-image: url('src/assets/adorno-rama-dos.svg');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+
+  transform: rotateZ(170deg);
+}
+
+.SwinsuitSection .ContentContainer .Adorno:nth-of-type(2) {
+  transform: rotateZ(-10deg);
+
+  bottom: -220px;
+  top: auto;
+}
+
+.SwinsuitSection .ContentContainer .Content {
+  inline-size: 100%;
+  block-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SwinsuitSection .ContentContainer .Content h3 {
+  color: rgb(25, 87, 106);
+
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.SwinsuitSection .ContentContainer .Content p {
+  color: #383d3e;
+
+  font-size: 20px;
+}
+
+.SwinsuitSection .ContentContainer .Content .Button {
+  inline-size: 280px;
+  block-size: 48px;
+
+  font-size: 16px;
+
+  border: 3px solid rgb(64, 64, 64);
+
+  border-radius: 8px;
+}

@@ -46,7 +46,7 @@
 import { onMounted } from 'vue';
 import { ref } from 'vue';
 
-const step = ref(3);
+const step = ref(1);
 
 onMounted(() => {
   setInterval(() => {

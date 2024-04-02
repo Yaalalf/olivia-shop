@@ -17,29 +17,20 @@
   position: absolute;
   z-index: -1;
 }
-/*
-.ActualCollectionSection .BackgroundContainer.One {
-  background-color: rgb(160, 193, 157);
-}
-
-.ActualCollectionSection .BackgroundContainer.Two {
-  background-color: rgb(33 43 32);
-}
-
-.ActualCollectionSection .BackgroundContainer.Three {
-  background-color: rgb(32, 197, 17);
-} */
 
 .ActualCollectionSection .BackgroundContainer .Background {
-  inline-size: 100%;
-  block-size: 100%;
+  inline-size: 2024px;
+  block-size: 2024px;
 
   position: absolute;
 
   opacity: 1;
   scale: 2;
 
-  border-radius: 100%;
+  border-start-start-radius: 50%;
+  border-end-start-radius: 50%;
+
+  transform-origin: right;
 
   z-index: 1;
 }
@@ -50,7 +41,7 @@
 
 .ActualCollectionSection .BackgroundContainer .Background.Animate {
   animation-name: scale;
-  animation-duration: 500ms;
+  animation-duration: 800ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 
@@ -66,13 +57,8 @@
 }
 
 .ActualCollectionSection .BackgroundContainer .Background.Three {
-  background-color: rgb(182 180 163);
+  background-color: #b0aa92;
 }
-/*
-.ActualCollectionSection .Background.Active {
-  opacity: 1;
-  transform: scale(2);
-} */
 
 .ActualCollectionSection .Adorno {
   block-size: 600px;
@@ -124,13 +110,23 @@
   background-image: url('src/assets/actual-collection-image.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: 120px center;
 }
 
 .ActualCollectionSection .ActualCollectionImage.Two {
-  background-image: url('src/assets/actual-collection-image-two.jpg');
+  right: -120px;
+
+  background-image: url('src/assets/actual-collection-image-two.jfif');
+  background-position: -120px center;
+  background-size: 120%;
 }
 .ActualCollectionSection .ActualCollectionImage.Three {
-  background-image: url('src/assets/actual-collection-image-three.jpg');
+  right: -120px;
+
+  background-image: url('src/assets/actual-collection-image-three.jfif');
+
+  background-position: -120px center;
+  background-size: 120%;
 }
 /****************************Animation***********************************/
 
@@ -140,7 +136,7 @@
     opacity: 0;
   }
   to {
-    scale: 2;
+    scale: 1.5;
     opacity: 1;
   }
 }

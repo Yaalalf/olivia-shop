@@ -1,5 +1,5 @@
 .CubanStoresSection {
-  block-size: 600px;
+  block-size: 720px;
 
   position: relative;
 
@@ -27,7 +27,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+
+  gap: 40px;
 
   position: relative;
 
@@ -35,18 +37,88 @@
 }
 
 .CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer {
-  inline-size: 480px;
+  inline-size: 720px;
+  block-size: 320px;
   text-align: start;
+
+  display: flex;
 }
 
-.CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer h3 {
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .Content {
+  inline-size: 70%;
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .Content
+  h3 {
   color: rgb(213, 186, 127);
   font-size: 40px;
 }
 
-.CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer p {
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .Content
+  p {
   color: rgb(192, 184, 168);
   font-size: 18px;
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .ButtonList {
+  inline-size: 30%;
+  block-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .ButtonList
+  .Button {
+  inline-size: 200px;
+  block-size: 48px;
+
+  position: relative;
+
+  border: 3px solid rgb(179, 179, 179);
+  border-radius: 8px;
+
+  color: white;
+  font-size: 12px;
+}
+
+.CubanStoresSection
+  .CubanStoresSectionContainer
+  .SectionTitleContainer
+  .ButtonList
+  .Button::after {
+  inline-size: 80px;
+  block-size: 80px;
+  content: '';
+
+  position: absolute;
+
+  right: -52px;
+  top: -56px;
+
+  background-color: rgb(244, 244, 244);
+
+  mask-image: url('src/assets/adorno-rama-uno.svg');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  transform: rotateY(180deg) rotateX(180deg) rotateZ(20deg);
 }
 
 .CubanStoresSection .CubanStoresSectionContainer .ImagesContainer {
