@@ -3,7 +3,10 @@
     <HeroSection />
     <OnBoardingSection />
     <ActualCollectionSection />
-    <CubanStoresSection /> <SwinsuitSection />
+    <CubanStoresSection />
+    <SwinsuitSection />
+    <LukasSection />
+    <!-- <SocialNetworkSection /> -->
   </q-page>
 </template>
 
@@ -13,4 +16,6 @@ import OnBoardingSection from 'src/components/sections/onBoarding/OnBoardingSect
 import ActualCollectionSection from 'src/components/sections/actualCollection/ActualCollectionSection.vue';
 import CubanStoresSection from 'src/components/sections/cubanStores/CubanStoresSection.vue';
 import SwinsuitSection from 'src/components/sections/swimsuit/SwimsuitSection.vue';
+import LukasSection from 'src/components/sections/lukas/LukasSection.vue';
+// import SocialNetworkSection from 'src/components/sections/socialNetwork/SocialNetworkSection.vue';
 </script>

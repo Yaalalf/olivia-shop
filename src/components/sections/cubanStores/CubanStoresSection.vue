@@ -30,13 +30,7 @@
             icon-right="store"
             flat
           ></q-btn>
-          <q-btn
-            class="Button"
-            label="Tienda de Santo Suarez"
-            no-caps
-            icon-right="store"
-            flat
-          ></q-btn>
+
           <q-btn
             class="Button"
             label="Tienda de Miramar"
