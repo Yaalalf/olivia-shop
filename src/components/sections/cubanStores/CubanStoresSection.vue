@@ -13,13 +13,14 @@
         <div class="Content">
           <h3>Media decada impactando la moda en Cuba</h3>
           <p>
-            Durante los últimos cinco años, nuestra tienda de vestidos y zapatos
+            Durante los últimos ocho años, nuestra tienda de vestidos y zapatos
             ha dejado una huella imborrable en el panorama de la moda en Cuba.
             Hemos sido testigos y protagonistas de la evolución de las
             tendencias locales, ofreciendo a nuestros clientes una amplia gama
-            de productos. Nuestra tienda no solo ha sido un lugar para adquirir
+            de productos.
+            <!--Nuestra tienda no solo ha sido un lugar para adquirir
             prendas y calzado de calidad, sino también un espacio de encuentro y
-            expresión de la identidad cubana a través de la moda.
+            expresión de la identidad cubana a través de la moda. -->
           </p>
         </div>
         <div class="ButtonList">

@@ -76,6 +76,7 @@
   inline-size: 80%;
 
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -120,9 +121,9 @@
 .OnBoardingCardContainer .OnBoardingCard .Content h4 {
   inline-size: auto;
 
-  margin-block-end: 4px;
+  margin-block-end: 20px;
 
-  font-size: 32px;
+  font-size: 36px;
   line-height: 44px;
   color: rgb(84, 102, 108);
 }
@@ -135,11 +136,13 @@
   color: rgb(17 85 89);
 }
 .OnBoardingCardContainer .OnBoardingCard:nth-of-type(4) .Content h4 {
-  color: rgb(181, 145, 123);
+  color: rgb(134, 92, 63);
 }
 
 .OnBoardingCardContainer .OnBoardingCard .Content p {
-  font-size: 18px;
+  font-size: 20px;
+
+  margin-block-end: 40px;
 
   color: rgb(56, 54, 54);
 }

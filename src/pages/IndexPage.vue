@@ -6,7 +6,7 @@
     <CubanStoresSection />
     <SwinsuitSection />
     <LukasSection />
-    <!-- <SocialNetworkSection /> -->
+    <SocialNetworkSection />
   </q-page>
 </template>
 
@@ -17,5 +17,5 @@ import ActualCollectionSection from 'src/components/sections/actualCollection/Ac
 import CubanStoresSection from 'src/components/sections/cubanStores/CubanStoresSection.vue';
 import SwinsuitSection from 'src/components/sections/swimsuit/SwimsuitSection.vue';
 import LukasSection from 'src/components/sections/lukas/LukasSection.vue';
-// import SocialNetworkSection from 'src/components/sections/socialNetwork/SocialNetworkSection.vue';
+import SocialNetworkSection from 'src/components/sections/socialNetwork/SocialNetworkSection.vue';
 </script>

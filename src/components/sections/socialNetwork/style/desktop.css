@@ -1,15 +1,16 @@
 .SocialNetworkSection {
+  inline-size: 100%;
   block-size: 720px;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   position: relative;
 
   background-image: url('src/assets/social-network-background.jpeg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   background-position: 0px 0px;
 
@@ -40,6 +41,8 @@
   inline-size: 520px;
   block-size: auto;
 
+  margin-inline-start: 20%;
+
   position: relative;
 
   z-index: 2;
@@ -58,7 +61,7 @@
 .SocialNetworkSection .ContentContainer .Content h3 {
   margin-block-end: 12px;
 
-  color: rgb(230, 198, 132);
+  color: rgb(241, 168, 168);
   font-size: 40px;
   line-height: 48px;
 }
@@ -69,17 +72,108 @@
   font-size: 20px;
 }
 
-.SocialNetworkSection .ContentContainer .Content .Button {
-  inline-size: 260px;
-  block-size: 48px;
+.SocialNetworkSection .ContentContainer .Content .SocialMedia {
+  inline-size: 100%;
 
-  font-size: 16px;
+  margin-block-start: 12px;
 
-  border: 3px solid rgb(230, 198, 132);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
-  color: rgb(230, 198, 132);
+  gap: 40px;
 
-  border-radius: 8px;
+  list-style: none;
+}
+
+.SocialNetworkSection .ContentContainer .Content .SocialMedia li {
+  display: flex;
+  align-items: center;
+}
+
+.SocialNetworkSection .ContentContainer .Content .SocialMedia li .Icon {
+  inline-size: 40px;
+  block-size: 40px;
+
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(1)
+  .Icon {
+  background-image: url('src/assets/faceook-logo.svg');
+}
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(2)
+  .Icon {
+  background-image: url('src/assets/instagram-logo.svg');
+}
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(3)
+  .Icon {
+  background-image: url('src/assets/whatsapp-logo.svg');
+}
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(4)
+  .Icon {
+  background-image: url('src/assets/telegram-logo.svg');
+}
+
+.SocialNetworkSection .ContentContainer .Content .SocialMedia li .Text {
+  font-size: 14px;
+
+  margin-inline-start: 12px;
+  font-weight: 500;
+}
+
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(1)
+  .Text {
+  color: #0866ff;
+}
+
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(2)
+  .Text {
+  color: #ea4843;
+}
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(3)
+  .Text {
+  color: #25d366;
+}
+.SocialNetworkSection
+  .ContentContainer
+  .Content
+  .SocialMedia
+  li:nth-of-type(4)
+  .Text {
+  color: #26a4e2;
 }
 
 .SocialNetworkSection .ContentContainer .ImagesContainer {

@@ -15,10 +15,10 @@
           Capta la esencia masculina con nuestra nueva marca: Lukas Boutique.
         </h3>
         <p>
-          Descubre la esencia de la moda masculina con Lukas Boutique, nuestra
-          nueva marca que redefine el estilo para hombres modernos y elegantes.
-          Desde prendas casuales hasta trajes formales, nuestra colección está
-          diseñada para realzar la confianza y el estilo de cada hombre.
+          Lukas Boutique, es nuestra nueva marca que redefine el estilo para
+          hombres modernos y elegantes. Prendas casuales y hasta trajes
+          formales, nuestra colección está diseñada para realzar la confianza y
+          el estilo de cada hombre.
         </p>
 
         <q-btn

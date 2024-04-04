@@ -38,10 +38,12 @@
 
 .CubanStoresSection .CubanStoresSectionContainer .SectionTitleContainer {
   inline-size: 720px;
-  block-size: 320px;
+  block-size: auto;
   text-align: start;
 
   display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .CubanStoresSection
@@ -56,8 +58,11 @@
   .SectionTitleContainer
   .Content
   h3 {
+  margin-block-end: 20px;
+
   color: rgb(213, 186, 127);
-  font-size: 40px;
+  font-size: 52px;
+  line-height: 68px;
 }
 
 .CubanStoresSection
@@ -66,7 +71,7 @@
   .Content
   p {
   color: rgb(192, 184, 168);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .CubanStoresSection
@@ -74,7 +79,7 @@
   .SectionTitleContainer
   .ButtonList {
   inline-size: 30%;
-  block-size: 100%;
+  block-size: 300px;
 
   display: flex;
   flex-direction: column;

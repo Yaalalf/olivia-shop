@@ -61,12 +61,13 @@
 
   color: rgb(230, 198, 132);
   font-size: 40px;
-  line-height: 48px;
+  line-height: 52px;
 }
 
 .LukasSection .ContentContainer .Content p {
-  color: #e7e7e7;
+  margin-block-end: 20px;
 
+  color: #e7e7e7;
   font-size: 20px;
 }
 
