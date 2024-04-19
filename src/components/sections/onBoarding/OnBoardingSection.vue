@@ -133,3 +133,4 @@
 <script setup lang="ts"></script>
 
 <style src="./style/desktop.css"></style>
+<style src="./style/mobile.css"></style>
