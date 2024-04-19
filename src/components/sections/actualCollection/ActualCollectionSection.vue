@@ -24,10 +24,12 @@
       <p>
         Renueva tu estilo con nuestra colección de primavera: colores vibrantes,
         estampados frescos y diseños que te harán brillar en esta temporada.
-        Descubre la moda que te inspira y te invita a disfrutar de la primavera
+        <!-- Descubre la moda que te inspira y te invita a disfrutar de la primavera
         con estilo y elegancia. ¡Déjate cautivar por la frescura de la temporada
-        y encuentra tu look perfecto con nosotros
+        y encuentra tu look perfecto con nosotros -->
       </p>
+
+      <q-btn class="Button" icon="arrow_forward" flat></q-btn>
     </div>
     <div class="ActualCollectionImageContainer">
       <transition
@@ -46,7 +48,7 @@
 import { onMounted } from 'vue';
 import { ref } from 'vue';
 
-const step = ref(1);
+const step = ref(3);
 
 onMounted(() => {
   setInterval(() => {
@@ -66,3 +68,4 @@ onMounted(() => {
 </script>
 
 <style src="./style/desktop.css"></style>
+<style src="./style/mobile.css"></style>

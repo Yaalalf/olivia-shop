@@ -1,0 +1,197 @@
+@media (320px <= width <= 1023px) {
+  .ActualCollectionSection {
+    block-size: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+
+    overflow: hidden;
+  }
+
+  .ActualCollectionSection .BackgroundContainer {
+    inline-size: 100%;
+    block-size: 100%;
+
+    position: absolute;
+    z-index: -1;
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background {
+    inline-size: 2024px;
+    block-size: 2024px;
+
+    position: absolute;
+
+    opacity: 1;
+    scale: 2;
+
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+
+    transform-origin: right;
+
+    z-index: 1;
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background.After {
+    z-index: 5;
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background.Animate {
+    animation-name: scale;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    z-index: 10;
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background.One {
+    background-color: rgb(33 43 32);
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background.Two {
+    background-color: rgb(180 183 178);
+  }
+
+  .ActualCollectionSection .BackgroundContainer .Background.Three {
+    background-color: #b0aa92;
+  }
+
+  .ActualCollectionSection .Adorno {
+    block-size: 600px;
+
+    inline-size: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: -460px;
+
+    background-color: rgb(49 70 53);
+
+    mask-image: url('src/assets/patron-fondo-coleccion.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+
+    transform: rotateZ(0deg);
+
+    transition: all ease-in-out 1s;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Two) .Adorno {
+    background-color: rgb(128, 134, 125);
+  }
+  .ActualCollectionSection:has(.BackgroundContainer.Three) .Adorno {
+    background-color: #7e7a64;
+  }
+
+  .ActualCollectionSection .Content {
+    inline-size: 320px;
+
+    margin-block-start: 20px;
+
+    order: 1;
+  }
+
+  .ActualCollectionSection .Content h3 {
+    font-size: 40px;
+
+    color: #9b701a;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Two) .Content h3 {
+    color: #2b4a39;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Three) .Content h3 {
+    color: #26353f;
+  }
+
+  .ActualCollectionSection .Content p {
+    font-size: 20px;
+
+    color: #6b8172;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Two) .Content p {
+    color: #3b413e;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Three) .Content p {
+    color: #3b413e;
+  }
+
+  .ActualCollectionSection .Content .Button {
+    inline-size: 40px;
+    block-size: 40px;
+    border-radius: 100%;
+    border: 2px solid #9b701a;
+
+    position: relative;
+    top: -32px;
+    left: 0px;
+    color: #9b701a;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Two) .Content .Button {
+    border: 2px solid #2b4a39;
+
+    color: #2b4a39;
+  }
+
+  .ActualCollectionSection:has(.BackgroundContainer.Three) .Content .Button {
+    border: 2px solid #26353f;
+
+    color: #26353f;
+  }
+
+  .ActualCollectionSection .ActualCollectionImageContainer {
+    block-size: 300px;
+    inline-size: 100%;
+    position: relative;
+  }
+  .ActualCollectionSection .ActualCollectionImage {
+    block-size: 100%;
+    inline-size: 100%;
+
+    position: absolute;
+
+    background-image: url('src/assets/actual-collection-image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -120px center;
+  }
+
+  .ActualCollectionSection .ActualCollectionImage.Two {
+    right: 0px;
+
+    background-image: url('src/assets/actual-collection-image-two.jfif');
+    background-position: -120px center;
+    background-size: cover;
+  }
+  .ActualCollectionSection .ActualCollectionImage.Three {
+    right: 0px;
+
+    background-image: url('src/assets/actual-collection-image-three.jfif');
+
+    background-position: -120px center;
+    background-size: cover;
+  }
+  /****************************Animation***********************************/
+
+  @keyframes scale {
+    from {
+      scale: 0;
+      opacity: 0;
+    }
+    to {
+      scale: 1.5;
+      opacity: 1;
+    }
+  }
+}
