@@ -1,6 +1,6 @@
 <template>
   <section class="HeroSection">
-    <header>
+    <header v-if="$q.screen.gt.sm">
       <div class="Logo"></div>
 
       <nav>
@@ -44,8 +44,8 @@
     <div class="BackdropFilter"></div>
     <div class="TitleContainer">
       <h1>Olivia Shop</h1>
-      <h2>
-        Viste con
+      <h2 v-if="$q.screen.gt.sm">
+        <span> Viste con</span>
         <div class="SpanContainer">
           <transition name="slide-up-two">
             <span v-if="text2 == 'one'">estilo</span>
@@ -54,7 +54,26 @@
           <div class="Adorno"></div>
         </div>
 
-        , camina con
+        <span>,</span> <span>camina con</span>
+        <div class="SpanContainer">
+          <transition name="slide-up">
+            <span v-if="text1 == 'one'">elegancia</span>
+            <span v-else-if="text1 == 'two'">fortaleza</span>
+          </transition>
+          <div class="Adorno"></div>
+        </div>
+      </h2>
+      <h2 v-else>
+        <span> Viste con</span>
+        <div class="SpanContainer">
+          <transition name="slide-up-two">
+            <span v-if="text2 == 'one'">estilo</span>
+            <span v-else-if="text2 == 'two'">gracia</span>
+          </transition>
+          <div class="Adorno"></div>
+        </div>
+
+        <span>camina con</span>
         <div class="SpanContainer">
           <transition name="slide-up">
             <span v-if="text1 == 'one'">elegancia</span>
@@ -80,7 +99,10 @@
 </template>
 
 <script setup lang="ts">
+import { useQuasar } from 'quasar';
 import { onMounted, ref } from 'vue';
+
+const $q = useQuasar();
 
 const text1 = ref('one');
 const text2 = ref('one');
@@ -99,3 +121,4 @@ onMounted(() => {
 </script>
 
 <style src="./style/desktop.css"></style>
+<style src="./style/mobile.css"></style>

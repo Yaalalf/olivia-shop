@@ -6,11 +6,14 @@
 
   position: relative;
 
-  background-image: url('src/assets/image_fx_alfombra_color_piel_sobre_ella_un_vestido_de.jpeg');
+  background-image: url('src/assets/hero-desktop.jpeg');
   background-size: 1600px 700px;
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
+
+/*****************************Header**********************************************/
+
 .HeroSection header {
   inline-size: 100%;
   block-size: 100px;
@@ -108,6 +111,7 @@
   left: auto;
   right: -36px;
 }
+/*************************************Content************************************/
 
 .HeroSection .BackdropFilter {
   inline-size: 100%;
